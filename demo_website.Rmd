@@ -18,6 +18,12 @@ ggplot(data = cars, aes(x=speed, y=dist, color=speed)) + geom_line() + geom_poin
 
 ```
 
+```{r silliness}
+
+ggplot(data = cars, aes(x=speed, y=dist, color="red")) + geom_line()
+```
+
+
 ```{r plotlycars, echo=FALSE}
 ggplotly(
   ggplot(data = cars, aes(x=speed, y=dist, color=speed)) + geom_line() + geom_point(alpha=.5) )
